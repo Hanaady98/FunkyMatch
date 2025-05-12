@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Overview</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>API Overview</h1>
+  </header>
+  <div class="container">
+    <p>
+      Welcome to the API for managing users and cards. Below is a brief
+      description of the available endpoints:
+    </p>
+
+    <h2> 🔑 Authentication & User Routes </h2>
+    <ul>
+      <li><strong>POST <code>/users/register</code></strong>: Register a new user (Public)</li>
+      <li><strong>POST <code>/users/login</code></strong>: Login an existing user (Public)</li>
+      <li><strong>GET <code>/users/</code></strong>: List all users (Admin)</li>
+      <li><strong>GET <code>/users/:id</code></strong>: Get full user profile (Owner/Admin)</li>
+      <li><strong>GET <code>/users/public/:id</code></strong>: Get public profile data (Public)</li>
+      <li><strong>PUT <code>/users/:id</code></strong>: Update profile details (Owner/Admin)</li>
+      <li><strong>PATCH <code>/users/:id</code></strong>: Change user role (User/Moderator/Admin) (Admin)</li>
+      <li><strong>DELETE <code>/users/:id</code></strong>: Delete account (Owner/Admin)</li>
+    </ul>
+
+    <p>
+      For more information, visit the
+      <a target="_blank">Users Postman
+        documentation</a>.
+    </p>
+
+    <h2> 💬 Chat & Messaging </h2>
+    <ul>
+      <li><strong>GET <code>/users/private-messages/:roomId</code></strong>: Get chat history (Participants)</li>
+      <li><strong>GET <code>/users/:id/private-messages</code></strong>: List all conversations (Owner)</li>
+      <li><strong>POST <code>/users/:id/send-private-message</code></strong>: Send a private message (Owner)</li>
+    </ul>
+
+    <p>
+      For more information, visit the
+      <a target="_blank"> Chat & Messaging
+        documentation</a>.
+    </p>
+
+    <h2> 🛡️ Admin Moderation </h2>
+    <ul>
+      <li><strong>POST <code>/users/admin/ban</code></strong>: Ban user (temporary/permanent)</li>
+      <li><strong>DELETE <code>/users/admin/ban/:userId</code></strong>: Remove user ban</li>
+      <li><strong>GET <code>/users/admin/bans/:userId</code></strong>: View user's ban history</li>
+    </ul>
+
+    <p>
+      For more information, visit the
+      <a target="_blank"> Admin Moderation
+        documentation</a>.
+    </p>
+
+    <h2> 🎯 Hobby System </h2>
+    <ul>
+      <li><strong>GET <code>/users/hobbies/all</code></strong>: List all available hobbies</li>
+      <li><strong>PATCH <code>/users/:id/add-hobby</code></strong>: Add hobby to profile</li>
+      <li><strong>PATCH <code>/users/:id/remove-hobby</code></strong>: Remove hobby from profile</li>
+      <li><strong>GET <code>/users/members/:hobby</code></strong>: Find users by hobby</li>
+    </ul>
+
+    <p>
+      For more information, visit the
+      <a target="_blank"> Hobby System
+        documentation</a>.
+    </p>
+
+    <footer>
+      <p>API Documentation © 2025</p>
+    </footer>
+  </div>
+</body>
+
+</html>

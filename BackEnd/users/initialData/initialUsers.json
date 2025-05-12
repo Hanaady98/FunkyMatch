@@ -1,0 +1,90 @@
+[
+  {
+    "username": "alicaJohnson123",
+    "name": {
+      "first": "Funky",
+      "last": "Match"
+    },
+    "profileImage": {
+      "url": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt": "Alice Johnson's profile picture"
+    },
+    "isModerator": false,
+    "isAdmin": true,
+    "email": "alice.admin@example.com",
+    "password": "Abc!123Abc",
+    "confirmPassword": "Abc!123Abc",
+    "address": {
+      "street": "123 Admin St",
+      "city": "Adminville",
+      "country": "United States"
+    },
+    "birthDate": "1990-05-12",
+    "gender": "Female",
+    "hobbies": [
+      "Reading",
+      "Dancing"
+    ],
+    "bio": "Admin user with full access."
+  },
+  {
+    "username": "bobSmith123",
+    "name": {
+      "first": "Bob",
+      "last": "Smith"
+    },
+    "profileImage": {
+      "url": "https://randomuser.me/api/portraits/men/2.jpg",
+      "alt": "Bob Smith's profile picture"
+    },
+    "isModerator": true,
+    "isAdmin": false,
+    "email": "bob.business@example.com",
+    "password": "hashedPassword123@",
+    "confirmPassword": "hashedPassword123@",
+    "address": {
+      "street": "456 Business Ave",
+      "city": "Business City",
+      "country": "Canada"
+    },
+    "birthDate": "1985-08-20",
+    "gender": "Male",
+    "hobbies": [
+      "Writing",
+      "Art",
+      "Cooking"
+    ],
+    "bio": "Business owner and entrepreneur."
+  },
+  {
+    "username": "charlieBrown123",
+    "name": {
+      "first": "Charlie",
+      "last": "Brown"
+    },
+    "profileImage": {
+      "url": "https://randomuser.me/api/portraits/men/3.jpg",
+      "alt": "Charlie Brown's profile picture"
+    },
+    "isModerator": false,
+    "isAdmin": false,
+    "email": "charlie.user@example.com",
+    "password": "hashedPassword123@",
+    "confirmPassword": "hashedPassword123@",
+    "address": {
+      "street": "789 User Lane",
+      "city": "Usertown",
+      "country": "United Kingdom"
+    },
+    "birthDate": "2000-01-15",
+    "gender": "Male",
+    "hobbies": [
+      "Gaming",
+      "Coding",
+      "Design",
+      "Music",
+      "Photography"
+    ],
+    "bio": "Regular user who loves adventures."
+  }
+]

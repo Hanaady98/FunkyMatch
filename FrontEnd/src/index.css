@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root[data-theme="dark"] {
+  --bg-header: #1f2937; /* gray-800 */
+  --bg-sidemenu: white;
+  --text-sidemenu: #1f2937; /* gray-800 */
+  --hover-sidemenu: #2d294a; /* gray-600 */
+  --bg-containers: white;
+  --text: #1f2937;
+}
+
+:root[data-theme="light"] {
+  --bg-header: #111827; /* gray-900 */
+  --bg-sidemenu: #111828; /* gray-800 */
+  --text-sidemenu: white;
+  --hover-sidemenu: #aa55fa; /* gray-700 */
+  --bg-containers: #111828;
+  --text: white;
+  --border-color: #4b5563;
+  --border-color-dark: #6b7280;
+}
+
+:root {
+  --border-color: #e5e7eb;
+  --border-color-dark: #4b5563;
+  --accent-color: #3b82f6; /* blue-500 */
+  --accent-hover: #2563eb; /* blue-600 */
+}
+
+/* Add to your global CSS */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea {
+  transition: all 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Custom radio button */
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #d1d5db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease;
+}
+
+input[type="radio"]:checked {
+  border-color: #3b82f6;
+  background-color: #3b82f6;
+  background-image: radial-gradient(circle, white 35%, transparent 40%);
+}
+
+input[type="radio"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.icon-wrapper {
+  display: inline-block;
+  line-height: 0;
+}
+
+.icon-wrapper svg {
+  display: inline-block;
+  vertical-align: middle;
+}
