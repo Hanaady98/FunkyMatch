@@ -46,7 +46,7 @@ const About = () => {
 
       {/* Bottom Containers */}
       <div className="flex w-full max-w-[800px] flex-col gap-6 md:flex-row">
-        {/* CEO Container */}
+        {/* CEO & Founder Container */}
         <div
           className="w-full rounded-2xl p-6 shadow-lg md:w-[calc(50%-12px)]"
           style={{
@@ -69,7 +69,7 @@ const About = () => {
           </p>
         </div>
 
-        {/* Co-Founder Container */}
+        {/* CEO & Founder Container */}
         <div
           className="w-full rounded-2xl p-6 shadow-lg md:w-[calc(50%-12px)]"
           style={{
