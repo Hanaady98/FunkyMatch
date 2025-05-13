@@ -116,6 +116,27 @@ GET	  /users/admin/bans/:userId	  View user's ban history
 
 ------------------------------💙----------------------------
 
+📝 Posts System:
+
+Method   Endpoint       Description    Access
+---------------------------------------------------
+POST - /posts/ - Create new post (with image) - Registered Users
+GET  -  /posts/  -  List all posts  -    Admin Only
+GET  -  /posts/user/:id - Get user's posts   Profile Owner  
+GET  -  /posts/public/user/:id - Get public posts  Public
+PUT  -   /posts/:id - Edit post content/image   Post Owner
+DELETE - /posts/:id  -   Delete post -   Post Owner
+PATCH -  /posts/:id - Like/unlike post - Registered Users
+
+✅ Features:
+- Image uploads (5MB max)
+- Edit posts
+- Real-time like updates
+- Public/private viewing modes
+- Admin oversight
+
+------------------------------💙----------------------------
+
 🎯 Hobby System:
 
 Method	   Endpoint	                Description
