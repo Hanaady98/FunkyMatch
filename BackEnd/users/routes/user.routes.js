@@ -220,14 +220,21 @@ userRouter.put("/:id", auth, isRegisteredUser(false), async (req, res) => {
 });
 
 /* ----- PATCH request to change the authLevel ----- */
-userRouter.patch("/:id", auth, isUser, async (req, res) => {
+userRouter.patch("/:id", auth, isAdmin, async (req, res) => {
   try {
     const { role } = req.body;
-    const updatedUser = await changeAuthLevel(req.params.id, role);
 
+    // Add validation for the role
+    if (!role || !["Moderator", "Admin"].includes(role)) {
+      return res.status(400).json({
+        message: "Invalid role. Must be either 'Moderator' or 'Admin'"
+      });
+    }
+
+    const updatedUser = await changeAuthLevel(req.params.id, role);
     res.json({
       message: "Authorization level updated successfully",
-      user: updatedUser // Send complete user data
+      user: updatedUser
     });
   } catch (err) {
     res.status(400).json({ message: err.message });
