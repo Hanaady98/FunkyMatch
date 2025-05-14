@@ -74,6 +74,8 @@ The .env file will be provided as a seperate zip file
                     
 🔑 Authentication & User Routes:
 
+*** API POSTMAN DOCUMENTATION ***
+https://documenter.getpostman.com/view/40123570/2sB2qUmQAX
 
 Method  Endpoint	        Description	              Access
 ------------------------------------------------------------
@@ -90,6 +92,8 @@ DELETE	/users/:id	Delete account	             Owner/Admin
 
 💬 Chat & Messaging:
 
+*** API POSTMAN DOCUMENTATION ***
+https://documenter.getpostman.com/view/40123570/2sB2qUmQAa
 
 Method	Endpoint       	Description	  -   Access
 ------------------------------------------------------------
@@ -104,6 +108,8 @@ POST	/users/:id/send-private-message	Send private message	- Owner
 
 🛡️ Admin Moderation:
 
+*** API POSTMAN DOCUMENTATION ***
+https://documenter.getpostman.com/view/40123570/2sB2qUmQAZ
 
 Method	        Endpoint	             Description
 ------------------------------------------------------------
@@ -117,6 +123,9 @@ GET	  /users/admin/bans/:userId	  View user's ban history
 ------------------------------💙----------------------------
 
 📝 Posts System:
+
+*** API POSTMAN DOCUMENTATION ***
+https://documenter.getpostman.com/view/40123570/2sB2qUmixg
 
 Method   Endpoint       Description    Access
 ---------------------------------------------------
@@ -138,6 +147,10 @@ PATCH -  /posts/:id - Like/unlike post - Registered Users
 ------------------------------💙----------------------------
 
 🎯 Hobby System:
+
+*** API POSTMAN DOCUMENTATION ***
+https://documenter.getpostman.com/view/40123570/2sB2qUmixf
+
 
 Method	   Endpoint	                Description
 ------------------------------------------------------------
