@@ -11,9 +11,10 @@ const name = db === process.env.MONGO_LOCAL ? "local" : "atlas";
 // to hide important sensitive stuff like our connection to the database
 export const connectServer = async () => {
   try {
-    await connect(MONGO_LOCAL);
-    console.log(chalk.yellow(`Connected to MongoDB`));
+    await connect(db);
+    console.log(chalk.yellow(`Connected to MongoDB ${name}`));
   } catch (error) {
     console.log(error);
   }
 };
+
